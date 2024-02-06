@@ -15,11 +15,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business", "Lesson1\Busines
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OOPDemo1", "OOPDemo1", "{D95CCF7D-D55A-44D6-80FD-384513CF4D6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{06FCCCE8-777F-4907-A027-0ECD51386DC5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "OOPDemo1\Entities\Entities.csproj", "{06FCCCE8-777F-4907-A027-0ECD51386DC5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Business.csproj", "{E3F3FDFC-81B0-41A9-B883-3A0F5009DCC0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "OOPDemo1\Business\Business.csproj", "{E3F3FDFC-81B0-41A9-B883-3A0F5009DCC0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workspace", "Workspace\Workspace.csproj", "{7A9B6DDA-3A53-4DAE-82D4-4F5C3D22F403}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workspace", "OOPDemo1\Workspace\Workspace.csproj", "{7A9B6DDA-3A53-4DAE-82D4-4F5C3D22F403}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
