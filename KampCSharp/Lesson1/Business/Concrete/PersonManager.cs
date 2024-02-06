@@ -1,4 +1,5 @@
 ﻿using Business.Abstaract;
+using Entities.Abstract;
 using Entities.Concrete;
 using MernisServiceReference;
 using System;
@@ -10,24 +11,24 @@ using System.Threading.Tasks;
 namespace Business.Concrete;
 
 public class PersonManager : IApplicantService
-{
-    public void ApplyForMask(Person person)
+{ 
+    public void ApplyForMask(IApplicant applicant)
     {
 
     }
 
-    public List<Person> GetList()
+    public List<IApplicant> GetList()
     {
         return null;
     }
 
-    public bool CheckPerson(Person person)
+    public bool CheckPerson(IApplicant applicant)
     {
         KPSPublicSoapClient client = new KPSPublicSoapClient(KPSPublicSoapClient.EndpointConfiguration.KPSPublicSoap);
 
         return client.TCKimlikNoDogrulaAsync(
             new TCKimlikNoDogrulaRequest(
-                new TCKimlikNoDogrulaRequestBody(person.NationalIdentity, person.FirstName, person.LastName, person.DateOfBirthYear)))
+                new TCKimlikNoDogrulaRequestBody(applicant.NationalIdentity, applicant.FirstName, applicant.LastName, applicant.DateOfBirth.Year)))
             .Result.Body.TCKimlikNoDogrulaResult;
     }
 

@@ -22,13 +22,15 @@ SelamVer();
 
 Console.WriteLine("Sonuç: " + Topla(3, 5));
 
+// ---------------------------------------
+
 
 Person person1 = new Person()
 {
     FirstName = "Emirhan",
     LastName = "Doğan",
     NationalIdentity = 5555555555,
-    DateOfBirthYear = 2002
+    DateOfBirth = new DateTime(2002, 10 ,5)
 };
 
 Person person2 = new Person()
@@ -36,12 +38,14 @@ Person person2 = new Person()
     FirstName = "Ali",
     LastName = "Ak",
     NationalIdentity = 4444444444,
-    DateOfBirthYear = 2005
+    DateOfBirth = new DateTime(2005, 5, 5)
 };
 
 person1 = person2;
 person2.NationalIdentity = 0;
 Console.WriteLine(person1.NationalIdentity);
+// ----------------------------------
+
 
 List<string> sehirler = new List<string>() { "İstanbul", "Bursa", "Adana", "Ankara" };
 sehirler.Add("Kocaeli");
@@ -51,6 +55,7 @@ foreach (var sehir in sehirler)
     Console.WriteLine(sehir);
 }
 
+// ----------------------------------
 // Ödev
 MyList<int> list = new MyList<int>(1, 2, 3 );
 list.Add(323);
@@ -64,12 +69,14 @@ foreach (var item in list.GetAll())
 }
 // Ödev Son
 
+// ------------------------------------
+
 ISupplierService supplierservice = new PttManager(new PersonManager());
 
 supplierservice.GiveMask(new Person()
 {
-    NationalIdentity = 1232,
-    FirstName = "Ali",
-    LastName = "Veli",
-    DateOfBirthYear = 2
+    NationalIdentity = 24243234,
+    FirstName = "Eren",
+    LastName = "Bil",
+    DateOfBirth = new DateTime(2001, 10, 5)
 });

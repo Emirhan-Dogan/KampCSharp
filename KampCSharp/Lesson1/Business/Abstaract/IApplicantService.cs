@@ -1,4 +1,5 @@
-﻿using Entities.Concrete;
+﻿using Entities.Abstract;
+using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace Business.Abstaract;
 
 public interface IApplicantService
 {
-    void ApplyForMask(Person person);
-    List<Person> GetList();
-    bool CheckPerson(Person person);
+    void ApplyForMask(IApplicant applicant);
+    List<IApplicant> GetList();
+    bool CheckPerson(IApplicant applicant);
 }

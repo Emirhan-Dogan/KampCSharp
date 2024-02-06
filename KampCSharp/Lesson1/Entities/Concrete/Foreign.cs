@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Entities.Concrete;
 
-public class Person: IApplicant
+public class Foreign : IApplicant
 {
     public string FirstName { get; set; }
     public string LastName { get; set; }

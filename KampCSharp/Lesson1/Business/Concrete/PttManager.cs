@@ -1,4 +1,5 @@
 ﻿using Business.Abstaract;
+using Entities.Abstract;
 using Entities.Concrete;
 using System;
 using System.Collections.Generic;
@@ -17,11 +18,11 @@ public class PttManager : ISupplierService
         _applicantService = applicantService;
     }
 
-    public void GiveMask(Person person)
+    public void GiveMask(IApplicant applicant)
     {   
-        if (_applicantService.CheckPerson(person))
+        if (_applicantService.CheckPerson(applicant))
         {
-            Console.WriteLine("Maske Verildi: " + person.FirstName);
+            Console.WriteLine("Maske Verildi: " + applicant.FirstName);
         }
         else
         {

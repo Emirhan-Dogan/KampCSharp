@@ -1,5 +1,7 @@
 ﻿using Business.Abstaract;
+using Entities.Abstract;
 using Entities.Concrete;
+using MernisForeignServiceReference;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,17 +12,29 @@ namespace Business.Concrete;
 
 public class ForeignerManager : IApplicantService
 {
-    public void ApplyForMask(Person person)
+    public void ApplyForMask(IApplicant applicant)
     {
         
     }
 
-    public bool CheckPerson(Person person)
+    public bool CheckPerson(IApplicant applicant)
     {
-        return true;
+        KPSPublicYabanciDogrulaSoapClient client = new KPSPublicYabanciDogrulaSoapClient(
+            KPSPublicYabanciDogrulaSoapClient.EndpointConfiguration.KPSPublicYabanciDogrulaSoap);
+
+        return client.YabanciKimlikNoDogrulaAsync(
+            new YabanciKimlikNoDogrulaRequest(
+                new YabanciKimlikNoDogrulaRequestBody(
+                    applicant.NationalIdentity, 
+                    applicant.FirstName,
+                    applicant.LastName, 
+                    applicant.DateOfBirth.Day,
+                    applicant.DateOfBirth.Month, 
+                    applicant.DateOfBirth.Year)))
+            .Result.Body.YabanciKimlikNoDogrulaResult;
     }
 
-    public List<Person> GetList()
+    public List<IApplicant> GetList()
     {
         return null;
     }
