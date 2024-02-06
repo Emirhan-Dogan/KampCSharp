@@ -1,0 +1,13 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Entities.Concrete.Credit
+{
+    public class FarmerCredit : BaseCredit
+    {
+        public bool SeasonalPaymentDeferred { get; set; } = false;
+    }
+}

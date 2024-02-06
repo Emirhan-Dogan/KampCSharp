@@ -13,8 +13,12 @@
         "packagesPath": "C:\\Users\\ag054\\.nuget\\packages\\",
         "outputPath": "D:\\Code\\intro\\KampCSharp\\KampCSharp\\Lesson1\\Business\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Programs\\VisualStudio\\shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\ag054\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -95,8 +99,12 @@
         "packagesPath": "C:\\Users\\ag054\\.nuget\\packages\\",
         "outputPath": "D:\\Code\\intro\\KampCSharp\\KampCSharp\\Lesson1\\Entities\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Programs\\VisualStudio\\shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\ag054\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
