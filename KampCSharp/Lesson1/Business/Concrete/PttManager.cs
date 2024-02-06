@@ -9,16 +9,17 @@ using System.Threading.Tasks;
 
 namespace Business.Concrete;
 
-public class PttManager : ISupplierService
+public class PttManager<T> : ISupplierService<T>
+    where T : class, IApplicant, new()
 {
-    private IApplicantService _applicantService;
+    private IApplicantService<T> _applicantService;
 
-    public PttManager(IApplicantService applicantService)
+    public PttManager(IApplicantService<T> applicantService)
     {
         _applicantService = applicantService;
     }
 
-    public void GiveMask(IApplicant applicant)
+    public void GiveMask(T applicant)
     {   
         if (_applicantService.CheckPerson(applicant))
         {

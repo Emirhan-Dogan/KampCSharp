@@ -71,9 +71,19 @@ foreach (var item in list.GetAll())
 
 // ------------------------------------
 
-ISupplierService supplierservice = new PttManager(new PersonManager());
+ISupplierService<Person> supplierservice1 = new PttManager<Person>(new PersonManager());
 
-supplierservice.GiveMask(new Person()
+supplierservice1.GiveMask(new Person()
+{
+    NationalIdentity = 24243234,
+    FirstName = "Eren",
+    LastName = "Bil",
+    DateOfBirth = new DateTime(2001, 10, 5)
+});
+
+ISupplierService<Foreign> supplierservice2 = new PttManager<Foreign>(new ForeignerManager());
+
+supplierservice2.GiveMask(new Foreign()
 {
     NationalIdentity = 24243234,
     FirstName = "Eren",

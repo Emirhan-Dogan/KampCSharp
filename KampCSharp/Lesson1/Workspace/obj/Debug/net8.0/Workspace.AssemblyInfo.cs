@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Workspace")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8bf59b587bf059cd5c99f3f734b9b94ed42263dc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3c456ceea275015f30db2746d154c290e58ddfe2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Workspace")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Workspace")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

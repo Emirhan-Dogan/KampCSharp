@@ -10,19 +10,19 @@ using System.Threading.Tasks;
 
 namespace Business.Concrete;
 
-public class PersonManager : IApplicantService
-{ 
-    public void ApplyForMask(IApplicant applicant)
+public class PersonManager : IApplicantService<Person>
+{
+    public void ApplyForMask(Person applicant)
     {
 
     }
 
-    public List<IApplicant> GetList()
+    public List<Person> GetList()
     {
         return null;
     }
 
-    public bool CheckPerson(IApplicant applicant)
+    public bool CheckPerson(Person applicant)
     {
         KPSPublicSoapClient client = new KPSPublicSoapClient(KPSPublicSoapClient.EndpointConfiguration.KPSPublicSoap);
 

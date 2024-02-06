@@ -10,14 +10,14 @@ using System.Threading.Tasks;
 
 namespace Business.Concrete;
 
-public class ForeignerManager : IApplicantService
+public class ForeignerManager : IApplicantService<Foreign>
 {
-    public void ApplyForMask(IApplicant applicant)
+    public void ApplyForMask(Foreign applicant)
     {
         
     }
 
-    public bool CheckPerson(IApplicant applicant)
+    public bool CheckPerson(Foreign applicant)
     {
         KPSPublicYabanciDogrulaSoapClient client = new KPSPublicYabanciDogrulaSoapClient(
             KPSPublicYabanciDogrulaSoapClient.EndpointConfiguration.KPSPublicYabanciDogrulaSoap);
@@ -34,7 +34,7 @@ public class ForeignerManager : IApplicantService
             .Result.Body.YabanciKimlikNoDogrulaResult;
     }
 
-    public List<IApplicant> GetList()
+    public List<Foreign> GetList()
     {
         return null;
     }

@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace Business.Abstaract;
 
-public interface IApplicantService
+public interface IApplicantService<T>
 {
-    void ApplyForMask(IApplicant applicant);
-    List<IApplicant> GetList();
-    bool CheckPerson(IApplicant applicant);
+    void ApplyForMask(T applicant);
+    List<T> GetList();
+    bool CheckPerson(T applicant);
 }

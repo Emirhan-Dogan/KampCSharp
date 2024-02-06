@@ -8,8 +8,8 @@ using System.Threading.Tasks;
 
 namespace Business.Abstaract
 {
-    public interface ISupplierService
+    public interface ISupplierService<T>
     {
-        void GiveMask(IApplicant applicant);
+        void GiveMask(T applicant);
     }
 }
