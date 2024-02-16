@@ -1,0 +1,16 @@
+D:\Code\intro\KampCSharp\KampCSharp\Lesson2Workshop3\DataAccess\obj\Debug\net8.0\DataAccess.csproj.AssemblyReference.cache
+D:\Code\intro\KampCSharp\KampCSharp\Lesson2Workshop3\DataAccess\obj\Debug\net8.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\intro\KampCSharp\KampCSharp\Lesson2Workshop3\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfoInputs.cache
+D:\Code\intro\KampCSharp\KampCSharp\Lesson2Workshop3\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfo.cs
+D:\Code\intro\KampCSharp\KampCSharp\Lesson2Workshop3\DataAccess\obj\Debug\net8.0\DataAccess.csproj.CoreCompileInputs.cache
+D:\Code\intro\KampCSharp\KampCSharp\Lesson2Workshop3\DataAccess\obj\Debug\net8.0\DataAccess.sourcelink.json
+D:\Code\intro\KampCSharp\KampCSharp\Lesson2Workshop3\DataAccess\bin\Debug\net8.0\DataAccess.deps.json
+D:\Code\intro\KampCSharp\KampCSharp\Lesson2Workshop3\DataAccess\bin\Debug\net8.0\DataAccess.dll
+D:\Code\intro\KampCSharp\KampCSharp\Lesson2Workshop3\DataAccess\bin\Debug\net8.0\DataAccess.pdb
+D:\Code\intro\KampCSharp\KampCSharp\Lesson2Workshop3\DataAccess\bin\Debug\net8.0\Entities.dll
+D:\Code\intro\KampCSharp\KampCSharp\Lesson2Workshop3\DataAccess\bin\Debug\net8.0\Entities.pdb
+D:\Code\intro\KampCSharp\KampCSharp\Lesson2Workshop3\DataAccess\obj\Debug\net8.0\DataAccess.csproj.CopyComplete
+D:\Code\intro\KampCSharp\KampCSharp\Lesson2Workshop3\DataAccess\obj\Debug\net8.0\DataAccess.dll
+D:\Code\intro\KampCSharp\KampCSharp\Lesson2Workshop3\DataAccess\obj\Debug\net8.0\refint\DataAccess.dll
+D:\Code\intro\KampCSharp\KampCSharp\Lesson2Workshop3\DataAccess\obj\Debug\net8.0\DataAccess.pdb
+D:\Code\intro\KampCSharp\KampCSharp\Lesson2Workshop3\DataAccess\obj\Debug\net8.0\ref\DataAccess.dll

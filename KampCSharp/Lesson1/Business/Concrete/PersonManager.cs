@@ -20,6 +20,7 @@ public class PersonManager : IApplicantService<Person>
     public List<Person> GetList()
     {
         return null;
+        new List<Person>().W;
     }
 
     public bool CheckPerson(Person applicant)

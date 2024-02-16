@@ -14,7 +14,7 @@ public class ForeignerManager : IApplicantService<Foreign>
 {
     public void ApplyForMask(Foreign applicant)
     {
-        
+
     }
 
     public bool CheckPerson(Foreign applicant)
@@ -25,11 +25,11 @@ public class ForeignerManager : IApplicantService<Foreign>
         return client.YabanciKimlikNoDogrulaAsync(
             new YabanciKimlikNoDogrulaRequest(
                 new YabanciKimlikNoDogrulaRequestBody(
-                    applicant.NationalIdentity, 
+                    applicant.NationalIdentity,
                     applicant.FirstName,
-                    applicant.LastName, 
+                    applicant.LastName,
                     applicant.DateOfBirth.Day,
-                    applicant.DateOfBirth.Month, 
+                    applicant.DateOfBirth.Month,
                     applicant.DateOfBirth.Year)))
             .Result.Body.YabanciKimlikNoDogrulaResult;
     }
